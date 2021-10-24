@@ -7,7 +7,7 @@ plugins {
 group 'org.training'
 version '1.0-SNAPSHOT'
 sourceCompatibility = '11'
-//mainClassName = 'aplikacja.MainTrainingApp'
+mainClassName = 'app.Launcher'
 
 javafx {
     version = "11.0.2"

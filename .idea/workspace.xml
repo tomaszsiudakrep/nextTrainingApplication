@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58583dbe-1990-49c9-9ba1-6004f868eb82" name="Default Changelist" comment="">
+    <list default="true" id="58583dbe-1990-49c9-9ba1-6004f868eb82" name="Default Changelist" comment="Main scene + launcher">
       <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
@@ -506,7 +506,6 @@
       <change beforePath="$PROJECT_DIR$/../MealsApp/src/main/java/com/mealapplication/demo/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MealsApp/src/main/java/com/mealapplication/demo/products/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MealsApp/src/main/java/com/mealapplication/demo/products/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MealsApp/src/main/java/com/mealapplication/demo/products/dao/ProductDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MealsApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../MealsApp/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringApp/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringApp/build.gradle" afterDir="false" />
@@ -527,11 +526,20 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1zwhV3EPS1phgighZ3z5gT3eAgY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -543,6 +551,19 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -551,8 +572,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635065079154</updated>
-      <workItem from="1635065082620" duration="609000" />
+      <workItem from="1635065082620" duration="1299000" />
     </task>
+    <task id="LOCAL-00001" summary="Exit controller">
+      <created>1635066215749</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635066215749</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Background settings">
+      <created>1635066231031</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1635066231031</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Main scene + launcher">
+      <created>1635066280979</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1635066280979</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,5 +611,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Exit controller" />
+    <MESSAGE value="Background settings" />
+    <MESSAGE value="Main scene + launcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main scene + launcher" />
   </component>
 </project>
