@@ -2,7 +2,13 @@ app/data/BackgroundSettings.java
  app.data.BackgroundSettings
 app/controller/ExitController.java
  app.controller.ExitController
+app/data/SetRepLadderSettings.java
+ app.data.SetRepLadderSettings
+app/data/SetTimeLadderSettings.java
+ app.data.SetTimeLadderSettings
 app/Launcher.java
  app.Launcher
+app/scene/nextTraining/ladderScene/LadderSettingsScene.java
+ app.scene.nextTraining.ladderScene.LadderSettingsScene
 app/scene/nextTraining/NextTrainingScene.java
  app.scene.nextTraining.NextTrainingScene

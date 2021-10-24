@@ -2,6 +2,7 @@ package app.scene.nextTraining;
 
 import app.Launcher;
 import app.data.BackgroundSettings;
+import app.scene.nextTraining.ladderScene.LadderSettingsScene;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -14,9 +15,12 @@ public class NextTrainingScene extends Application {
 
     Launcher launcher = new Launcher();
     BackgroundSettings backgroundSettings = new BackgroundSettings();
+    LadderSettingsScene ladderSettingsScene;
 
     @Override
     public void start(Stage primaryStage) {
+        ladderSettingsScene = new LadderSettingsScene();
+
         GridPane gridPane = new GridPane();
             gridPane.setAlignment(Pos.CENTER);
             gridPane.setBackground(backgroundSettings.defaultBackground());
@@ -41,6 +45,14 @@ public class NextTrainingScene extends Application {
         backToMenu.setOnAction(event -> {
             try {
                 launcher.start(primaryStage);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+
+        ladderButton.setOnAction(event -> {
+            try {
+                ladderSettingsScene.start(primaryStage);
             } catch (Exception e) {
                 e.printStackTrace();
             }

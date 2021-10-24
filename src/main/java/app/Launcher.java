@@ -57,7 +57,6 @@ public class Launcher extends Application {
         exitMenuButton.setOnAction(actionEvent -> exitController.exit());
         newTrainingButton.setOnAction(event -> nextTrainingScene.start(primaryStage));
 
-
     }
 
 }
