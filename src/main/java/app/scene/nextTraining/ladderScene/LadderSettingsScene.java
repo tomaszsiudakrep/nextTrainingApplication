@@ -1,8 +1,8 @@
 package app.scene.nextTraining.ladderScene;
 
 import app.data.BackgroundSettings;
-import app.data.SetRepLadderSettings;
-import app.data.SetTimeLadderSettings;
+import app.data.ladder.SetRepLadderSettings;
+import app.data.ladder.SetTimeLadderSettings;
 import app.scene.nextTraining.NextTrainingScene;
 import javafx.application.Application;
 import javafx.geometry.Pos;
@@ -21,12 +21,15 @@ public class LadderSettingsScene extends Application {
     SetTimeLadderSettings setTimeLadderSettings = new SetTimeLadderSettings();
     SetRepLadderSettings setRepLadderSettings = new SetRepLadderSettings();
     NextTrainingScene nextTrainingScene = new NextTrainingScene();
+    LadderTrainingScene ladderTrainingScene;
 
     public static Label timeSettingsLabel;
     public static Label repSettingsLabel;
 
     @Override
     public void start(Stage primaryStage) {
+        ladderTrainingScene = new LadderTrainingScene();
+
         AnchorPane anchorPane = new AnchorPane();
             anchorPane.setBackground(backgroundSettings.defaultBackground());
 
@@ -99,5 +102,6 @@ public class LadderSettingsScene extends Application {
         minusTime.setOnAction(event -> setTimeLadderSettings.minusIntervalTimeFromDefaultTime());
         plusRep.setOnAction(event -> setRepLadderSettings.plusIntervalRepToDefaultReps());
         minusRep.setOnAction(event -> setRepLadderSettings.minusIntervalRepFromDefaultReps());
+        startTrainingButton.setOnAction(event -> ladderTrainingScene.start(primaryStage));
     }
 }

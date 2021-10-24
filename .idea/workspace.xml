@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58583dbe-1990-49c9-9ba1-6004f868eb82" name="Default Changelist" comment="Ladder settings scene">
+    <list default="true" id="58583dbe-1990-49c9-9ba1-6004f868eb82" name="Default Changelist" comment="LadderSettingsScene">
       <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
@@ -244,8 +244,28 @@
       <change afterPath="$PROJECT_DIR$/../NextTraining/gradlew.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../NextTraining/ranking.list" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../NextTraining/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/data/SetRepLadderSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/data/SetTimeLadderSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/app/controller/CountdownTimerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/app/data/CountdownTimer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/app/data/CountdownTimerData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/app/scene/nextTraining/ladderScene/LadderTrainingScene.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/TestSuiteCountdownTimer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestSuiteCountdownTimer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestSuiteCountdownTimer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/controller/CountdownTimerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/data/timer/CountdownTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/data/timer/CountdownTimerData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/scene/nextTraining/ladderScene/LadderTrainingScene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestSuiteCountdownTimer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OtherProjects/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OtherProjects/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OtherProjects/.gradle/6.7/fileChanges/last-build.bin" afterDir="false" />
@@ -512,16 +532,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/app/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/app/Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/app/scene/nextTraining/NextTrainingScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/app/scene/nextTraining/NextTrainingScene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/app/data/SetRepLadderSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/app/data/SetRepLadderSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/app/scene/nextTraining/ladderScene/LadderSettingsScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/app/scene/nextTraining/ladderScene/LadderSettingsScene.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/scene/nextTraining/NextTrainingScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/scene/nextTraining/NextTrainingScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/data/SetRepLadderSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/data/ladder/SetRepLadderSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/data/SetTimeLadderSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/data/ladder/SetTimeLadderSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/scene/nextTraining/ladderScene/LadderSettingsScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/scene/nextTraining/ladderScene/LadderSettingsScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringApp/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringApp/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringApp/src/main/java/com/springtest/hibernate/invoice/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringApp/src/main/java/com/springtest/hibernate/invoice/Invoice.java" afterDir="false" />
@@ -605,7 +627,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.TestSuiteCountdownTimer.test_downloadElapsedTime">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -638,8 +660,52 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="TestSuiteCountdownTimer.test_convertTime" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;TestSuiteCountdownTimer.test_convertTime&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSuiteCountdownTimer.test_downloadElapsedTime" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;TestSuiteCountdownTimer.test_downloadElapsedTime&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestSuiteCountdownTimer.test_downloadElapsedTime" />
+        <item itemvalue="Gradle.TestSuiteCountdownTimer.test_convertTime" />
         <item itemvalue="Gradle.NextTrainingApplication [run]" />
       </list>
     </recent_temporary>
@@ -696,7 +762,28 @@
       <option name="project" value="LOCAL" />
       <updated>1635068568418</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Set step of reps in ladder">
+      <created>1635074089985</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1635074089985</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Set time of break in ladder">
+      <created>1635074107954</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1635074107954</updated>
+    </task>
+    <task id="LOCAL-00009" summary="LadderSettingsScene">
+      <created>1635074155907</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1635074155907</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -733,6 +820,9 @@
     <MESSAGE value="Select your training main scene" />
     <MESSAGE value="Launcher" />
     <MESSAGE value="Ladder settings scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ladder settings scene" />
+    <MESSAGE value="Set step of reps in ladder" />
+    <MESSAGE value="Set time of break in ladder" />
+    <MESSAGE value="LadderSettingsScene" />
+    <option name="LAST_COMMIT_MESSAGE" value="LadderSettingsScene" />
   </component>
 </project>

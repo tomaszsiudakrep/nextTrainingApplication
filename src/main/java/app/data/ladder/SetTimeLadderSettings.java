@@ -1,4 +1,4 @@
-package app.data;
+package app.data.ladder;
 
 import app.scene.nextTraining.ladderScene.LadderSettingsScene;
 
