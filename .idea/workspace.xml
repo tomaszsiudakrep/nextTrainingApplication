@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58583dbe-1990-49c9-9ba1-6004f868eb82" name="Default Changelist" comment="Main scene + launcher">
+    <list default="true" id="58583dbe-1990-49c9-9ba1-6004f868eb82" name="Default Changelist" comment="Select your training main scene">
       <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
@@ -244,7 +244,6 @@
       <change afterPath="$PROJECT_DIR$/../NextTraining/gradlew.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../NextTraining/ranking.list" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../NextTraining/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/scene/nextTraining/NextTrainingScene.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OtherProjects/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OtherProjects/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OtherProjects/.gradle/6.7/fileChanges/last-build.bin" afterDir="false" />
@@ -507,6 +506,16 @@
       <change beforePath="$PROJECT_DIR$/../MealsApp/src/main/java/com/mealapplication/demo/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MealsApp/src/main/java/com/mealapplication/demo/products/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MealsApp/src/main/java/com/mealapplication/demo/products/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MealsApp/src/main/java/com/mealapplication/demo/products/dao/ProductDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MealsApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../MealsApp/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/app/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/app/Launcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/scene/nextTraining/NextTrainingScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/scene/nextTraining/NextTrainingScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringApp/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringApp/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringApp/src/main/java/com/springtest/hibernate/invoice/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringApp/src/main/java/com/springtest/hibernate/invoice/Invoice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringApp/src/main/java/com/springtest/hibernate/invoice/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringApp/src/main/java/com/springtest/hibernate/invoice/Item.java" afterDir="false" />
@@ -635,7 +644,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635065079154</updated>
-      <workItem from="1635065082620" duration="2457000" />
+      <workItem from="1635065082620" duration="2798000" />
     </task>
     <task id="LOCAL-00001" summary="Exit controller">
       <created>1635066215749</created>
@@ -658,7 +667,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635066280979</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Select your training main scene">
+      <created>1635067603383</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1635067603383</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -680,6 +696,7 @@
     <MESSAGE value="Exit controller" />
     <MESSAGE value="Background settings" />
     <MESSAGE value="Main scene + launcher" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main scene + launcher" />
+    <MESSAGE value="Select your training main scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Select your training main scene" />
   </component>
 </project>

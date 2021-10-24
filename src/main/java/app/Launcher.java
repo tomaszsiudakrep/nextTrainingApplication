@@ -2,6 +2,7 @@ package app;
 
 import app.controller.ExitController;
 import app.data.BackgroundSettings;
+import app.scene.nextTraining.NextTrainingScene;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -12,9 +13,10 @@ import javafx.stage.Stage;
 
 public class Launcher extends Application {
 
-//    NextTrainingScene nextTrainingScene = new NextTrainingScene();
-    BackgroundSettings backgroundSettings = new BackgroundSettings();
     ExitController exitController = new ExitController();
+    BackgroundSettings backgroundSettings = new BackgroundSettings();
+
+    NextTrainingScene nextTrainingScene;
 
     public static void main(String[] args) {
         launch(args);
@@ -22,7 +24,7 @@ public class Launcher extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-//        nextTrainingScene = new NextTrainingScene();
+        nextTrainingScene = new NextTrainingScene();
 
         GridPane gridMenu = new GridPane();
         gridMenu.setAlignment(Pos.CENTER);
@@ -53,7 +55,7 @@ public class Launcher extends Application {
         primaryStage.show();
 
         exitMenuButton.setOnAction(actionEvent -> exitController.exit());
-//        newTrainingButton.setOnAction(event -> nextTrainingScene.start(primaryStage));
+        newTrainingButton.setOnAction(event -> nextTrainingScene.start(primaryStage));
 
 
     }

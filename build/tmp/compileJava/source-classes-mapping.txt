@@ -1,8 +1,8 @@
 app/data/BackgroundSettings.java
  app.data.BackgroundSettings
-app/Launcher.java
- app.Launcher
 app/controller/ExitController.java
  app.controller.ExitController
+app/Launcher.java
+ app.Launcher
 app/scene/nextTraining/NextTrainingScene.java
  app.scene.nextTraining.NextTrainingScene

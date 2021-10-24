@@ -12,8 +12,8 @@ import javafx.stage.Stage;
 
 public class NextTrainingScene extends Application {
 
-    BackgroundSettings backgroundSettings = new BackgroundSettings();
     Launcher launcher = new Launcher();
+    BackgroundSettings backgroundSettings = new BackgroundSettings();
 
     @Override
     public void start(Stage primaryStage) {
