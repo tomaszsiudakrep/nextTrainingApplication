@@ -4,3 +4,5 @@ app/Launcher.java
  app.Launcher
 app/controller/ExitController.java
  app.controller.ExitController
+app/scene/nextTraining/NextTrainingScene.java
+ app.scene.nextTraining.NextTrainingScene
