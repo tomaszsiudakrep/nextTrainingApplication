@@ -1,14 +1,14 @@
 package app.data.timer;
 
-import app.data.ladder.SetTimeLadderSettings;
+import app.scene.nextTraining.ladderScene.LadderSettingsScene;
 
 public class CountdownTimerData {
 
-    public int convertTime(int elapsedTime) {
-        return elapsedTime * 1000 * 60;
+    public static int convertTime(int elapsedTime) {
+        return elapsedTime * 1000;
     }
 
-    public int downloadElapsedTime() {
-        return SetTimeLadderSettings.defaultTime;
+    public static int downloadElapsedTime() {
+        return LadderSettingsScene.defaultTime;
     }
 }

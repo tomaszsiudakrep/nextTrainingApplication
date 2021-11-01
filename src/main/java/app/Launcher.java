@@ -27,8 +27,8 @@ public class Launcher extends Application {
         nextTrainingScene = new NextTrainingScene();
 
         GridPane gridMenu = new GridPane();
-        gridMenu.setAlignment(Pos.CENTER);
-        gridMenu.setBackground(backgroundSettings.defaultBackground());
+            gridMenu.setAlignment(Pos.CENTER);
+            gridMenu.setBackground(backgroundSettings.defaultBackground());
 
         Button newTrainingButton = new Button("Next training");
             newTrainingButton.setPrefWidth(150);

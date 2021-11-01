@@ -1,24 +1,17 @@
 package app.data.timer;
 
 import app.controller.CountdownTimerController;
+import app.scene.nextTraining.ladderScene.LadderSettingsScene;
+import app.scene.nextTraining.ladderScene.LadderTrainingScene;
 import javafx.application.Platform;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
-
 import javax.swing.*;
 
 public class CountdownTimer {
 
-    CountdownTimerData countdownTimerData = new CountdownTimerData();
     CountdownTimerController countdownTimerController = new CountdownTimerController();
 
-    public static VBox vBoxTime;
-    public static HBox hBoxTimeButton;
     public static Label timeLabel = new Label();
-    public static Button startButton = new Button("START");
-    public static Button resetButton = new Button("RESET");
     public static int elapsedTime;
     public static int hours = 0;
     public static int minutes = 0;
@@ -40,47 +33,26 @@ public class CountdownTimer {
         if (elapsedTime == 0) {
             stopTimer();
             started = false;
-            startButton.setText("START");
-            timeLabel.setText("END OF TIME");
+            elapsedTime = CountdownTimerController.elapsedTime();
+            LadderTrainingScene.repsDoneButton.setDisable(false);
+            timeLabel.setText("LET'S GO");
         }
     }));
 
     public CountdownTimer() {
-        elapsedTime = countdownTimerController.elapsedTime();
-
-        vBoxTime = new VBox();
-        vBoxTime.setPrefWidth(400);
-        vBoxTime.setPrefHeight(75);
-        hBoxTimeButton = new HBox();
-        hBoxTimeButton.setPrefHeight(25);
-        hBoxTimeButton.setPrefWidth(400);
-        timeLabel.setPrefWidth(400);
-        timeLabel.setPrefHeight(50);
-        timeLabel.setStyle("-fx-background-color: white; -fx-font-size: 30; -fx-text-fill: #6857a5;-fx-underline: false; -fx-text-alignment: right; -fx-alignment: center");
-        timeLabel.setText(hours_string + ":" + minutes_string + ":" + seconds_string);
-        startButton.setPrefWidth(200);
-        startButton.setPrefHeight(25);
-        resetButton.setPrefWidth(200);
-        resetButton.setPrefHeight(25);
-
-        hBoxTimeButton.getChildren().add(startButton);
-        hBoxTimeButton.getChildren().add(resetButton);
-
-        vBoxTime.getChildren().add(0, timeLabel);
-        vBoxTime.getChildren().add(1, hBoxTimeButton);
-
-        startButton.setOnAction(event ->  start());
-        resetButton.setOnAction(event -> reset());
+        elapsedTime = CountdownTimerController.elapsedTime();
+        timeLabel.setPrefWidth(150);
+        timeLabel.setPrefHeight(30);
+        timeLabel.setStyle("-fx-background-color: white; -fx-font-size: 30; -fx-text-fill: #6857a5;-fx-underline: false; -fx-text-alignment: center; -fx-alignment: center");
+        timeLabel.setText("LET'S GO");
     }
 
     public static void start() {
         if (!started) {
             started = true;
-            startButton.setText("STOP");
             startTimer();
         } else {
             started = false;
-            startButton.setText("START");
             stopTimer();
         }
     }
@@ -88,7 +60,6 @@ public class CountdownTimer {
     public static void reset() {
         stopTimer();
         started = false;
-        elapsedTime = elapsedTime;
         seconds = 0;
         minutes = 0;
         hours = 0;
@@ -96,8 +67,6 @@ public class CountdownTimer {
         minutes_string = String.format("%02d", minutes);
         hours_string = String.format("%02d", hours);
         timeLabel.setText(hours_string + ":" + minutes_string + ":" + seconds_string);
-        startButton.setText("START");
-
     }
 
     public static void startTimer() {
@@ -106,6 +75,17 @@ public class CountdownTimer {
 
     public static void stopTimer() {
         timer.stop();
+    }
+
+    public static void plusIntervalTimeToDefaultTime() {
+        LadderSettingsScene.defaultTime += LadderSettingsScene.intervalTime;
+        LadderSettingsScene.timeSettingsLabel.setText(LadderSettingsScene.defaultTime + " seconds break");
+    }
+
+    public static void minusIntervalTimeFromDefaultTime() {
+        LadderSettingsScene.defaultTime -= LadderSettingsScene.intervalTime;
+        if (LadderSettingsScene.defaultTime == 0) LadderSettingsScene.defaultTime = 5;
+        LadderSettingsScene.timeSettingsLabel.setText(LadderSettingsScene.defaultTime + " seconds break");
     }
 
 }

@@ -1,5 +1,5 @@
 import app.data.timer.CountdownTimerData;
-import app.data.ladder.SetTimeLadderSettings;
+import app.scene.nextTraining.ladderScene.LadderSettingsScene;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -20,7 +20,7 @@ public class TestSuiteCountdownTimer {
     @Test
     void test_downloadElapsedTime() {
         //Given
-        SetTimeLadderSettings.defaultTime = 100;
+        LadderSettingsScene.defaultTime = 100;
         //When
         int time = countdownTimerData.downloadElapsedTime();
         //Then

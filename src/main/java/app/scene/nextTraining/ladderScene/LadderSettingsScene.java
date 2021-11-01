@@ -1,8 +1,9 @@
 package app.scene.nextTraining.ladderScene;
 
+import app.controller.LadderTrainingController;
 import app.data.BackgroundSettings;
 import app.data.ladder.SetRepLadderSettings;
-import app.data.ladder.SetTimeLadderSettings;
+import app.data.timer.CountdownTimer;
 import app.scene.nextTraining.NextTrainingScene;
 import javafx.application.Application;
 import javafx.geometry.Pos;
@@ -18,18 +19,20 @@ import javafx.stage.Stage;
 public class LadderSettingsScene extends Application {
 
     BackgroundSettings backgroundSettings = new BackgroundSettings();
-    SetTimeLadderSettings setTimeLadderSettings = new SetTimeLadderSettings();
     SetRepLadderSettings setRepLadderSettings = new SetRepLadderSettings();
     NextTrainingScene nextTrainingScene = new NextTrainingScene();
-    LadderTrainingScene ladderTrainingScene;
+    LadderTrainingScene ladderTrainingScene = new LadderTrainingScene();;
+    LadderTrainingController ladderTrainingController = new LadderTrainingController();
 
     public static Label timeSettingsLabel;
     public static Label repSettingsLabel;
+    public static int defaultTime = 60;
+    public static int intervalTime = 5;
+    public static int defaultReps = 1;
+    public static int intervalRep = 1;
 
     @Override
     public void start(Stage primaryStage) {
-        ladderTrainingScene = new LadderTrainingScene();
-
         AnchorPane anchorPane = new AnchorPane();
             anchorPane.setBackground(backgroundSettings.defaultBackground());
 
@@ -63,11 +66,11 @@ public class LadderSettingsScene extends Application {
         Button backToMenuSettings = new Button("Back to menu");
             backToMenuSettings.setPrefWidth(250);
             backToMenuSettings.setPrefHeight(25);
-        timeSettingsLabel = new Label(SetTimeLadderSettings.defaultTime + " seconds break");
+        timeSettingsLabel = new Label(defaultTime + " seconds break");
             timeSettingsLabel.setPrefWidth(300);
             timeSettingsLabel.setPrefHeight(30);
             timeSettingsLabel.setStyle("-fx-background-color: white;-fx-alignment: center;-fx-font-size: 12");
-        repSettingsLabel = new Label(SetRepLadderSettings.defaultReps + " rep step");
+        repSettingsLabel = new Label(defaultReps + " rep step");
             repSettingsLabel.setPrefWidth(300);
             repSettingsLabel.setPrefHeight(30);
             repSettingsLabel.setStyle("-fx-background-color: white;-fx-alignment: center;-fx-font-size: 12");
@@ -98,10 +101,13 @@ public class LadderSettingsScene extends Application {
         primaryStage.setScene(sceneSettingTraining);
 
         backToMenuSettings.setOnAction(event -> nextTrainingScene.start(primaryStage));
-        plusTime.setOnAction(event -> setTimeLadderSettings.plusIntervalTimeToDefaultTime());
-        minusTime.setOnAction(event -> setTimeLadderSettings.minusIntervalTimeFromDefaultTime());
+        plusTime.setOnAction(event -> CountdownTimer.plusIntervalTimeToDefaultTime());
+        minusTime.setOnAction(event -> CountdownTimer.minusIntervalTimeFromDefaultTime());
         plusRep.setOnAction(event -> setRepLadderSettings.plusIntervalRepToDefaultReps());
         minusRep.setOnAction(event -> setRepLadderSettings.minusIntervalRepFromDefaultReps());
-        startTrainingButton.setOnAction(event -> ladderTrainingScene.start(primaryStage));
+        startTrainingButton.setOnAction(event -> {
+            ladderTrainingScene.start(primaryStage);
+            ladderTrainingController.startLadderTraining();
+        });
     }
 }

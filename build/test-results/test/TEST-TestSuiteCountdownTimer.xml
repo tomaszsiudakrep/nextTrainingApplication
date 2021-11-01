@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuiteCountdownTimer" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-24T15:01:39" hostname="TOM" time="0.05">
-  <properties/>
-  <testcase name="test_downloadElapsedTime()" classname="TestSuiteCountdownTimer" time="0.05"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
