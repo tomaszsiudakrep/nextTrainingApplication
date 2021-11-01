@@ -12,12 +12,12 @@ app/controller/CountdownTimerController.java
  app.controller.CountdownTimerController
 app/data/timer/CountdownTimer.java
  app.data.timer.CountdownTimer
+app/data/ladder/RepsToDo.java
+ app.data.ladder.RepsToDo
 app/Launcher.java
  app.Launcher
 app/controller/LadderTrainingController.java
  app.controller.LadderTrainingController
-app/data/ladder/RepsToDo.java
- app.data.ladder.RepsToDo
 app/scene/nextTraining/ladderScene/LadderTrainingScene.java
  app.scene.nextTraining.ladderScene.LadderTrainingScene
 app/scene/nextTraining/ladderScene/LadderSettingsScene.java
